@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Penjumlahan matriks &#8212; My sample book</title>
+    <title>Tugas 2 - Aljabar Matriks</title>
   
   
   
@@ -152,8 +152,8 @@
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="_static/logo2.jpg" class="logo__image only-light" alt="Komputasi Aljabar Linear"/>
+    <script>document.write(`<img src="_static/logo.jpg" class="logo__image only-dark" alt="Komputasi Aljabar Linear"/>`);</script>
   
   
 </a></div>
@@ -174,7 +174,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Pembuka
                 </a>
             </li>
         </ul>
@@ -182,6 +182,8 @@
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sistemlinier.html">Tugas 1 - Sistem Linear</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tugas2.html">Tugas 2 - Aljabar Matriks</a></li>
 </ul>
 
     </div>
@@ -367,21 +369,10 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Penjumlahan matriks</h1>
+    <h1>Aljabar Matriks</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
-            
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Penjumlahan matriks</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pengurangan-matriks">Pengurangan Matriks</a></li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -391,19 +382,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>#Aljabar Matriks</p>
+  <h1>Aljabar Matriks</h1>
 <ul class="simple">
 <li><p>penjelasan apa itu matriks</p></li>
 <li><p>operasi matriks</p></li>
 <li><p>penjumlahan, perkalian, pengurangan, transpose matriks</p></li>
 <li><p>buat program untuk mengalikan matriks a dan b</p></li>
 </ul>
-<p>##Apa Itu Matriks?
-Matriks adalah sebuah himpunan bilangan yang disusun dalam bentuk tabel berupa baris dan kolom. Setiap elemen di dalam matriks dapat diidentifikasi dengan menggunakan dua indeks, yaitu indeks baris dan indeks kolom.</p>
+<h2>Apa Itu Matriks?</h2>
+<p>Matriks adalah sebuah himpunan bilangan yang disusun dalam bentuk tabel berupa baris dan kolom. Setiap elemen di dalam matriks dapat diidentifikasi dengan menggunakan dua indeks, yaitu indeks baris dan indeks kolom.</p>
 <p>berikut adalah contoh matriks :
-$<span class="math notranslate nohighlight">\(A=\begin{bmatrix}2&amp;4\\9&amp;7\end{bmatrix}\)</span>$</p>
-<p>##Operasi Matriks
-Operasi matriks adalah operasi suatu bentuk matriks, seperti penjumlahan, pengurangan, perkalian, transpose, dan invers. untuk penjelasan lebih lanjutnya dengan beberapa contoh matriks seperti dibawah :</p>
+<span class="math notranslate nohighlight">\(A=\begin{bmatrix}2&amp;4\\9&amp;7\end{bmatrix}\)</span></p>
+<h2>Operasi Matriks</h2>
+<p>Operasi matriks adalah operasi suatu bentuk matriks, seperti penjumlahan, pengurangan, perkalian, transpose, dan invers. untuk penjelasan lebih lanjutnya dengan beberapa contoh matriks seperti dibawah :</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -416,26 +407,25 @@ Operasi matriks adalah operasi suatu bentuk matriks, seperti penjumlahan, pengur
 </div>
 </div>
 </div>
-<section id="penjumlahan-matriks">
-<h1>Penjumlahan matriks<a class="headerlink" href="#penjumlahan-matriks" title="Link to this heading">#</a></h1>
+<h2>Penjumlahan matriks</h2>
 <p>Penjumlahan matriks adalah operasi penjumlahan dari dua buah matriks untuk menghasilkan matriks baru. operasi penjumlahan matriks ini hanya dapat dilakukan ketika kedua matriks yang akan dijumlahkan memiliki elemen baris dan kolom yang sama. misalkan, matriks (3x3) hanya dapat dijumlahkan dengan matriks (3x3).
 untuk rumusnya, seperti di bawah ini:</p>
 <p>jika ada matriks
-$<span class="math notranslate nohighlight">\(\begin{equation*}
+<span class="math notranslate nohighlight">\(\begin{equation*}
 A=
 \begin{bmatrix}
 a&amp;b\\
 c&amp;d
 \end{bmatrix}
-\end{equation*}\)</span><span class="math notranslate nohighlight">\( dijumlahkan dengan matriks
-\)</span><span class="math notranslate nohighlight">\(\begin{equation*}
+\end{equation*}\)</span><span class="math notranslate nohighlight"> dijumlahkan dengan matriks
+</span><span class="math notranslate nohighlight">\(\begin{equation*}
 B=
 \begin{bmatrix}
 p&amp;q\\
 r&amp;s
 \end{bmatrix}
-\end{equation*}\)</span><span class="math notranslate nohighlight">\(
-maka penjumlahannya adalah \)</span><span class="math notranslate nohighlight">\(\begin{equation*}
+\end{equation*}\)</span><span class="math notranslate nohighlight">
+maka penjumlahannya adalah </span><span class="math notranslate nohighlight">\(\begin{equation*}
 C=
 \begin{bmatrix}
 a+p&amp;b+q\\
@@ -460,8 +450,7 @@ c+r&amp;d+s
 </div>
 </div>
 </section>
-<section id="pengurangan-matriks">
-<h1>Pengurangan Matriks<a class="headerlink" href="#pengurangan-matriks" title="Link to this heading">#</a></h1>
+<h2>Pengurangan Matriks</h2>
 <p>Untuk operasi pengurangan matriks, kurang lebih sama dengan operasi penjumlahan matriks. Operasi ini hanya dapat dilakukan pada dua matriks yang memiliki elemen baris dan kolom yang sama</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -479,18 +468,18 @@ c+r&amp;d+s
 </div>
 </div>
 </div>
-<p>##Perkalian Matriks
-Operasi perkalian matriks memilik 2 macam, yaitu :</p>
+<h2>Perkalian Matriks</h2>
+<p>Operasi perkalian matriks memilik 2 macam, yaitu :</p>
 <ul class="simple">
 <li><p>Perkalian matriks dengan bilangan real(skalar) dan,</p></li>
 <li><p>Perkalian matriks dengan matriks</p></li>
 </ul>
-<p>###Perkalian Matriks dengan Bilangan Real(Skalar)
-Operasi perkalian matriks dengan skalar dilakukan dengan cara mengalikan semua elemen matriks dengan skalar. contohnya :</p>
+<h3>Perkalian Matriks dengan Bilangan Real(Skalar)</h3>
+<p>Operasi perkalian matriks dengan skalar dilakukan dengan cara mengalikan semua elemen matriks dengan skalar. contohnya :</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{equation*}A=2\times\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}\end{equation*}\end{split}\]</div>
 <p>maka operasinya adalah
-$<span class="math notranslate nohighlight">\(\begin{equation*}A=\begin{bmatrix}a\times2&amp;b\times2\\c\times2&amp;d\times2\end{bmatrix}\end{equation*}\)</span>$</p>
+<span class="math notranslate nohighlight">\(\begin{equation*}A=\begin{bmatrix}a\times2&amp;b\times2\\c\times2&amp;d\times2\end{bmatrix}\end{equation*}\)</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Perkalian Matrik dengan Bilangan Real(skalar)</span>
@@ -507,11 +496,11 @@ $<span class="math notranslate nohighlight">\(\begin{equation*}A=\begin{bmatrix}
 </div>
 </div>
 </div>
-<p>###Perkalian Matriks dengan Matriks
-Operasi perkalian matriks dengan matriks dapat dilakukan dengan mengalikan elemen-elemen matriks dalam baris matriks pertama dengan elemen-elemen matriks dalam kolom matriks kedua. contohnya :
-$<span class="math notranslate nohighlight">\(\begin{equation*}A=\begin{bmatrix}a&amp;b&amp;c\\d&amp;e&amp;f\end{bmatrix}\end{equation*}\)</span><span class="math notranslate nohighlight">\( dikalikan dengan matriks \)</span><span class="math notranslate nohighlight">\(\begin{equation*}B=\begin{bmatrix}p&amp;q\\r&amp;s\\t&amp;u\end{bmatrix}\end{equation*}\)</span><span class="math notranslate nohighlight">\(
+<h3>Perkalian Matriks dengan Matriks</h3>
+<p>Operasi perkalian matriks dengan matriks dapat dilakukan dengan mengalikan elemen-elemen matriks dalam baris matriks pertama dengan elemen-elemen matriks dalam kolom matriks kedua. contohnya :
+<span class="math notranslate nohighlight">\(\begin{equation*}A=\begin{bmatrix}a&amp;b&amp;c\\d&amp;e&amp;f\end{bmatrix}\end{equation*}\)</span><span class="math notranslate nohighlight">dikalikan dengan matriks</span><span class="math notranslate nohighlight">\(\begin{equation*}B=\begin{bmatrix}p&amp;q\\r&amp;s\\t&amp;u\end{bmatrix}\end{equation*}\)</span><span class="math notranslate nohighlight">
 maka operasinya adalah :
-\)</span><span class="math notranslate nohighlight">\(\begin{equation*}C=\begin{bmatrix}(a\times p+b\times r+c\times t)&amp;(a\times q+b\times s+c\times u)\\(d\times p+e\times r+f\times t)&amp;(d\times q+e\times s+f\times u)\end{bmatrix}\end{equation*}\)</span>$</p>
+</span><span class="math notranslate nohighlight">\(\begin{equation*}C=\begin{bmatrix}(a\times p+b\times r+c\times t)&amp;(a\times q+b\times s+c\times u)\\(d\times p+e\times r+f\times t)&amp;(d\times q+e\times s+f\times u)\end{bmatrix}\end{equation*}\)</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Perkalian Matriks dengan Matriks</span>
@@ -532,11 +521,11 @@ maka operasinya adalah :
 </div>
 </div>
 </div>
-<p>##Transpose Matriks
-Transpose matriks adalah operasi yang menukar posisi baris dan kolom matriks sehingga di peroleh matriks baru. contohnya :
-$<span class="math notranslate nohighlight">\(\begin{equation*}A=\begin{bmatrix}a&amp;b&amp;c\\d&amp;e&amp;f\end{bmatrix}\end{equation*}\)</span><span class="math notranslate nohighlight">\(
+<h2>Transpose Matriks</h2>
+<p>Transpose matriks adalah operasi yang menukar posisi baris dan kolom matriks sehingga di peroleh matriks baru. contohnya :
+<span class="math notranslate nohighlight">\(\begin{equation*}A=\begin{bmatrix}a&amp;b&amp;c\\d&amp;e&amp;f\end{bmatrix}\end{equation*}\)</span><span class="math notranslate nohighlight">
 maka transpose matriksnya adalah
-\)</span><span class="math notranslate nohighlight">\(\begin{equation*}A^T=\begin{bmatrix}a&amp;d\\b&amp;e\\c&amp;f\end{bmatrix}\end{equation*}\)</span>$</p>
+</span><span class="math notranslate nohighlight">\(\begin{equation*}A^T=\begin{bmatrix}a&amp;d\\b&amp;e\\c&amp;f\end{bmatrix}\end{equation*}\)</span>$</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Transpose Matrik</span>
@@ -559,9 +548,9 @@ maka transpose matriksnya adalah
 </div>
 </div>
 </div>
-<p>##Invers Matriks
-Invers dapat diartikan sebagai sebuah kebalikan. yang berarti invers matriks adalah kebalikan dari suatu matriks. Misalnya, terdapat suatu fungsi $<span class="math notranslate nohighlight">\(f(x)=2x\)</span><span class="math notranslate nohighlight">\( maka invers dari fungsi tersebut adalah \)</span><span class="math notranslate nohighlight">\(f^{-1}(x)= \frac{1}{2}x\)</span><span class="math notranslate nohighlight">\( Namun, tentu saja invers dari fungsi dan invers dari matriks itu berbeda, karena elemen baris dan kolom pada matriks memengaruhi cara mencari invers pada matriks tersebut. untuk rumusnya, seperti yang dibawah ini :
-\)</span><span class="math notranslate nohighlight">\(\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}^{-1}=\frac{1}{ad-bc}\begin{bmatrix}d&amp;-b\\-c&amp;a\end{bmatrix}\)</span>$</p>
+<h2>Invers Matriks</h2>
+<p>Invers dapat diartikan sebagai sebuah kebalikan. yang berarti invers matriks adalah kebalikan dari suatu matriks. Misalnya, terdapat suatu fungsi <span class="math notranslate nohighlight">\(f(x)=2x\)</span><span class="math notranslate nohighlight"> maka invers dari fungsi tersebut adalah </span><span class="math notranslate nohighlight">\(f^{-1}(x)= \frac{1}{2}x\)</span><span class="math notranslate nohighlight">Namun, tentu saja invers dari fungsi dan invers dari matriks itu berbeda, karena elemen baris dan kolom pada matriks memengaruhi cara mencari invers pada matriks tersebut. untuk rumusnya, seperti yang dibawah ini :
+</span><span class="math notranslate nohighlight">\(\begin{bmatrix}a&amp;b\\c&amp;d\end{bmatrix}^{-1}=\frac{1}{ad-bc}\begin{bmatrix}d&amp;-b\\-c&amp;a\end{bmatrix}\)</span>$</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">invers</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
@@ -577,7 +566,7 @@ Invers dapat diartikan sebagai sebuah kebalikan. yang berarti invers matriks ada
 </div>
 </div>
 </div>
-<p>##Program Perkalian Matrik A dan B</p>
+<h2>Program Perkalian Matrik A dan B</h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">perkalian_matriks</span><span class="p">(</span><span class="n">matrix1</span><span class="p">,</span> <span class="n">matrix2</span><span class="p">):</span>
@@ -651,17 +640,8 @@ Invers dapat diartikan sebagai sebuah kebalikan. yang berarti invers matriks ada
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Tugas 1</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="markdown-notebooks.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Notebooks with MyST Markdown</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -677,13 +657,6 @@ Invers dapat diartikan sebagai sebuah kebalikan. yang berarti invers matriks ada
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Penjumlahan matriks</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pengurangan-matriks">Pengurangan Matriks</a></li>
-</ul>
-
-  </nav></div>
 
 </div></div>
               
@@ -696,7 +669,7 @@ Invers dapat diartikan sebagai sebuah kebalikan. yang berarti invers matriks ada
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book Community
+By Muhammad Adzin Naufal Ansori
 </p>
 
   </div>
