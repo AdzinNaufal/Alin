@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; My sample book</title>
+    <title>Tugas 1 - Sistem Linear&#8212;</title>
   
   
   
@@ -174,15 +174,15 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Pengantar
                 </a>
             </li>
         </ul>
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tugas2.html">Penjumlahan matriks</a></li>
-
+<li class="toctree-l1"><a class="reference internal" href="sistemlinier.html">Tugas 1 - Sistem Linear</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tugas2.html">Tugas 2 - Aljabar Matriks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
@@ -369,7 +369,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Sistem Linear</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -378,8 +378,11 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
+                <ul class="visible nav section-nav flex-column">
+    <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menggambar-model-3d">Menggambar Model 3D</a></li>
+    <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mendefinisikan-fungsi-operasi-baris-eliminasi-gauss">Definisi Fungsi Operasi Baris Eliminasi Gauss</a></li>
+    <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-sistem-persamaan-linier-dengan-menggunakan-eliminasi-gauss">penyelesaian sistem persamaan linear dengan menggunakan eliminasi gauss</a></li>
+    </ul>
 
             </nav>
         </div>
@@ -391,7 +394,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <p>##menggambarkan model 3D</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="sistem-linear">
+<h1>Sistem Linear<a class="headerlink" href="#sistem-linear">#</a></h1>
+    <br><br><br>
+  <section id="menggambar-model-3d">
+  <h2>menggambarkan model 3D<a class="headerlink" href="#menggambar-model-3d">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -444,30 +451,8 @@ document.write(`
 <img alt="_images/0bbd1d075201867163e55c0d064cc1733fa1ff10341ff766b79153bce490980e.png" src="_images/0bbd1d075201867163e55c0d064cc1733fa1ff10341ff766b79153bce490980e.png" />
 </div>
 </div>
-<p>penyelesaian sistem persamaan linier dengan menggunakan eliminasi gauss</p>
-<p>selesaikan persamaan berikut:
-$<span class="math notranslate nohighlight">\(
-8x_1+9x_2+x_3=19\\
-x_1+2x_2+3x_3=9\\
-2x_1+x_2+x_3=5\
-\)</span>$</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">19</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">]])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 8  9  1 19]
- [ 1  2  3  9]
- [ 2  1  1  5]]
-</pre></div>
-</div>
-</div>
-</div>
-<p>###mendefinisikan fungsi operasi baris eliminasi gauss</p>
+<section id="mendefinisikan-fungsi-operasi-baris-eliminasi-gauss">
+  <h2>Mendefinisikan Fungsi Operasi Baris Eliminasi Gauss<a class="headerlink" href="#mendefinisikan-fungsi-operasi-baris-eliminasi-gauss">#</a></h2>
 <ul class="simple">
 <li><p>RowSwap() : Digunakan untuk menukar baris yang kita inginkan dari matriks ke baris 1</p></li>
 <li><p>RowScale() : Digunakan untuk mengalikan baris matriks dengan angka yang kita inginkan</p></li>
@@ -526,7 +511,32 @@ x_1+2x_2+3x_3=9\\
 </div>
 </div>
 </div>
-<p>###Berikut langkah penyelesaiannya</p>
+<section id="penyelesaian-sistem-persamaan-linier-dengan-menggunakan-eliminasi-gauss">
+  <h2>Penyelesaian Sistem Persamaan Linear Dengan Menggunakan Eliminasi Gauss<a class="headerlink" href="#penyelesaian-sistem-persamaan-linier-dengan-menggunakan-eliminasi-gauss">#</a></h2>
+<p>selesaikan persamaan berikut:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+8x_1+9x_2+x_3=19\\
+x_1+2x_2+3x_3=9\\
+2x_1+x_2+x_3=5\
+\end{split}\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">19</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 8  9  1 19]
+ [ 1  2  3  9]
+ [ 2  1  1  5]]
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Berikut langkah penyelesaiannya : </strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A1</span> <span class="o">=</span> <span class="n">RowScale</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
@@ -766,12 +776,12 @@ x_3=2\
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="notebooks.html"
+       href="intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Content with notebooks</p>
+        <p class="prev-next-title">Pengantar</p>
       </div>
     </a>
     <a class="right-next"
@@ -779,7 +789,7 @@ x_3=2\
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Penjumlahan matriks</p>
+        <p class="prev-next-title">Tugas 2</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -814,7 +824,7 @@ x_3=2\
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book Community
+By Muhammad Adzin Naufal Ansori
 </p>
 
   </div>
@@ -824,7 +834,7 @@ By The Jupyter Book Community
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2024.
       <br/>
     
   </p>
