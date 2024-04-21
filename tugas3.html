@@ -152,8 +152,8 @@
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="_static/logo2.jpg" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo2.jpg" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
   
   
 </a></div>
@@ -174,16 +174,14 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Pengantar
                 </a>
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tugas2.html">Penjumlahan matriks</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sistemlinier.html">Tugas 1 - Sistem Linear</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tugas2.html">Tugas 2 - Aljabar Matriks</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas 3 - Matriks Invers</a></li>
 </ul>
 
     </div>
@@ -420,14 +418,14 @@ document.write(`
 <section id="menyelesaikan-soal-persamaan-6-variabel">
 <h2>Menyelesaikan Soal Persamaan 6 variabel<a class="headerlink" href="#menyelesaikan-soal-persamaan-6-variabel" title="Link to this heading">#</a></h2>
 <p>Misalkan diberikan persamaan 6 variabel sebagai berikut :</p>
-<p><span class="math notranslate nohighlight">\(2x_1 + x_2 + 3x_3 + x_4 + 2x_5 + 3x_6 = 15\\
+<span class="math notranslate nohighlight">\(2x_1 + x_2 + 3x_3 + x_4 + 2x_5 + 3x_6 = 15\\
 x_1 + x_2 + 6x_3 + x_4 + 3x_5 + 4x_6 = 21\\
 2x_1 - 2x_2 + 5x_3 + 4x_4 + x_5 + 4x_6 = 19\\
 x_1 + 2x_2 + x_3 + 3x_4 + x_5 + x_6 = 12\\
 2x_1 + 2x_2 + 6x_3 + 3x_4 + 2x_5 + 4x_6 = 22\\
 3x_1 + 2x_2 + 3x_3 + 2x_4 + x_5 + x_6 = 14\
-\)</span></p>
-<p>Matriks augmented dari sistem persamaan ini :
+\)</span>
+<p>Matriks augmented dari sistem persamaan ini :</p>
 \begin{split}
 \begin{bmatrix}
 2 &amp; 1 &amp; 3 &amp; 1 &amp; 2 &amp; 3 &amp; | &amp; 15\
@@ -437,9 +435,9 @@ x_1 + 2x_2 + x_3 + 3x_4 + x_5 + x_6 = 12\\
 2 &amp; 2 &amp; 6 &amp; 3 &amp; 2 &amp; 4 &amp; | &amp; 22\
 3 &amp; 2 &amp; 3 &amp; 2 &amp; 1 &amp; 1 &amp; | &amp; 14\
 \end{bmatrix}
-\end{split}</p>
+\end{split}
 <p>Menuliskan matriks augmented :</p>
-<p>\begin{split}
+\begin{split}
 \begin{bmatrix}
 2 &amp; 1 &amp; 3 &amp; 1 &amp; 2 &amp; 3 &amp; | &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\
 1 &amp; 1 &amp; 6 &amp; 1 &amp; 3 &amp; 4 &amp; | &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0\
@@ -448,7 +446,7 @@ x_1 + 2x_2 + x_3 + 3x_4 + x_5 + x_6 = 12\\
 2 &amp; 2 &amp; 6 &amp; 3 &amp; 2 &amp; 4 &amp; | &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0\
 3 &amp; 2 &amp; 3 &amp; 2 &amp; 1 &amp; 1 &amp; | &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
 \end{bmatrix}
-\end{split}</p>
+\end{split}
 <p>Berikut Penyelesaiannya menggunakan metode Eliminasi Gauss Jordan :</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1273,24 +1271,24 @@ Matrix A Invers =
 <p>x5 = 4</p>
 <p>x6 = 0</p>
 <p>Lalu substitusikan ke persamaan awal.</p>
-<p><span class="math notranslate nohighlight">\(2x_1 + x_2 + 3x_3 + x_4 + 2x_5 + 3x_6 = 15\\
+<span class="math notranslate nohighlight">\(2x_1 + x_2 + 3x_3 + x_4 + 2x_5 + 3x_6 = 15\\
 x_1 + x_2 + 6x_3 + x_4 + 3x_5 + 4x_6 = 21\\
 2x_1 - 2x_2 + 5x_3 + 4x_4 + x_5 + 4x_6 = 19\\
 x_1 + 2x_2 + x_3 + 3x_4 + x_5 + x_6 = 12\\
 2x_1 + 2x_2 + 6x_3 + 3x_4 + 2x_5 + 4x_6 = 22\\
 3x_1 + 2x_2 + 3x_3 + 2x_4 + x_5 + x_6 = 14\
-\)</span></p>
+\)</span>
 <p>Persamaan setelah disubstitusi :</p>
-<p><span class="math notranslate nohighlight">\(
+<span class="math notranslate nohighlight">\(
 2(1) + 1(0) + 3(1) + 1(2) + 2(4) + 3(0) = 2 + 0 + 3 + 2 + 8 + 0 = 15\\
 1(1) + 1(0) + 6(1) + 1(2) + 3(4) + 4(0) = 1 + 0 + 6 + 2 + 12 + 0 = 21\\
 2(1) - 2(0) + 5(1) + 4(2) + 1(4) + 4(0) = 2 + 0 + 5 + 8 + 4 + 0 = 19\\
 1(1) + 2(0) + 1(1) + 3(2) + 1(4) + 1(0) = 1 + 0 + 1 + 6 + 4 + 0 = 12\\
 2(1) + 2(0) + 6(1) + 3(2) + 2(4) + 4(0) = 2 + 0 + 6 + 6 + 8 + 0 = 22\\
 3(1) + 2(0) + 3(1) + 2(2) + 1(4) + 1(0) = 3 + 0 + 3 + 4 + 4 + 0 = 14\
-\)</span></p>
+\)</span>
 <p>Berikut Invers Matriks A setelah dibulatkan :</p>
-<p>\begin{split}
+\begin{split}
 \begin{equation*}
 A^-1=
 \begin{bmatrix}
@@ -1302,7 +1300,7 @@ A^-1=
 0.6 &amp; -0.533 &amp; -0.067 &amp; -0.167 &amp; 0.567 &amp; -0.5\
 \end{bmatrix}
 \end{equation*}
-\end{split}</p>
+\end{split}
 </section>
 </section>
 
