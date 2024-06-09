@@ -1,0 +1,665 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>PAGERANK &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'aplikasiKAL';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Transformasi Linier" href="tugas5.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">My sample book</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="tugas2.html">Penjumlahan matriks</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="tugas3.html">Matriks Invers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tugas4.html">Determinan Matriks</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="tugas5.html">Transformasi Linier</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">PAGERANK</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FaplikasiKAL.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/aplikasiKAL.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>PAGERANK</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">Pengertian</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-dasar">Konsep Dasar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma">Algoritma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi">Implementasi</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="pagerank">
+<h1>PAGERANK<a class="headerlink" href="#pagerank" title="Link to this heading">#</a></h1>
+<section id="pengertian">
+<h2>Pengertian<a class="headerlink" href="#pengertian" title="Link to this heading">#</a></h2>
+<p>Dilansir dari wikipedia, PageRank adalah algoritma yang digunakan oleh Google Search untuk memberi peringkat pada halaman web, dalam mengukur seberapa pentingnya bagi user pada hasil pencarian.</p>
+<p>Menurut Google:</p>
+<p>PageRank bekerja dengan menghitung jumlah dan kualitas tautan ke suatu halaman untuk menentukan perkiraan kasar seberapa penting situs web tersebut. Asumsi yang mendasarinya adalah bahwa situs web yang lebih penting cenderung menerima lebih banyak tautan dari situs web lainnya.</p>
+<p>Saat ini, PageRank bukan satu-satunya algoritma pencarian yang digunakan oleh Google untuk mengurutkan hasil penelusuran, tetapi merupakan algoritma pertama yang digunakan oleh perusahaan itu, dan merupakan algoritma yang paling terkenal. Mulai 24 September 2019, PageRank dan semua paten terkaitnya sudah kedaluwarsa, sehingga tak dipakai lagi.</p>
+</section>
+<section id="konsep-dasar">
+<h2>Konsep Dasar<a class="headerlink" href="#konsep-dasar" title="Link to this heading">#</a></h2>
+<p>Banyak cara digunakan search engine dalam menentukan kualitas/rangking sebuah halaman web, mulai dari penggunaan META Tags, isi dokumen, penekanan pada content dan masih banyak teknik lain atau gabungan teknik yang mungkin digunakan. Link popularity, sebuah teknologi yang dikembangkan untuk memperbaiki kekurangan dari teknologi lain (Meta Keywords, Meta Description) yang bisa dicurangi dengan halaman yang khusus di desain untuk search engine atau biasa disebut doorway pages. Dengan algoritma ‘PageRank’ ini, dalam setiap halaman akan diperhitungkan inbound link (link masuk) dan outbound link (link keuar) dari setiap halaman web.</p>
+<p>PageRank, memiliki konsep dasar yang sama dengan link popularity, tetapi tidak hanya memperhitungkan “jumlah” inbound dan outbound link. Pendekatan yang digunakan adalah sebuah halaman akan diangap penting jika halaman lain memiliki link ke halaman tersebut. Sebuah halaman juga akan menjadi semakin penting jika halaman lain yang memiliki rangking (pagerank) tinggi mengacu ke halaman tersebut.</p>
+<p>Dengan pendekatan yang digunakan PageRank, proses terjadi secara rekursif dimana sebuah rangking akan ditentukan oleh rangking dari halaman web yang rangkingnya ditentukan oleh rangking halaman web lain yang memiliki link ke halaman tersebut. Proses ini berarti suatu proses yang berulang (rekursif). Di dunia maya, ada jutaan bahkan milyaran halaman web. Oleh karena itu sebuah rangking halaman web ditentukan dari struktur link dari keseluruhan halaman web yang ada di dunia maya. Sebuah proses yang sangat besar dan komplek.</p>
+</section>
+<section id="algoritma">
+<h2>Algoritma<a class="headerlink" href="#algoritma" title="Link to this heading">#</a></h2>
+<p>Dari beberapa penjelasan diatas, Lawrence Page and Sergey Brin membuat algoritma PageRank seperti dibawah ini:</p>
+<p>Algoritma awal</p>
+<p><span class="math notranslate nohighlight">\(PR(A) = (1-d) + d \left( \frac{PR(T_1)}{C(T_1)} + \cdots + \frac{PR(T_n)}{C(T_n)} \right)\)</span></p>
+<p>Salah satu algoritma lain yang dipublikasikan</p>
+<p><span class="math notranslate nohighlight">\(PR(A) = \frac{(1-d)}{N} + d \left( \frac{PR(T1)}{C(T1)} + \ldots + \frac{PR(Tn)}{C(Tn)} \right)\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(PR(A)\)</span> Adalah PageRank halaman A</p></li>
+<li><p><span class="math notranslate nohighlight">\(PR(T1)\)</span> Adalah Pagerank halaman T1 yang mengacu ke halaman A</p></li>
+<li><p><span class="math notranslate nohighlight">\(C(T1)\)</span> Adalah jumlah link keluar (outbound link) pada halaman T1</p></li>
+<li><p><span class="math notranslate nohighlight">\(d\)</span> Adalah damping factor yang bisa diberi antara 0 dan 1.</p></li>
+<li><p><span class="math notranslate nohighlight">\(N\)</span> Adalah jumlah keseluruhan halaman web (yang terindeks oleh Google)</p></li>
+</ul>
+</section>
+<section id="implementasi">
+<h2>Implementasi<a class="headerlink" href="#implementasi" title="Link to this heading">#</a></h2>
+<p>Dari algoritma diatas, diberikan sebuah graph seperti di bawah ini :</p>
+<p><img alt="graf1.png" src="data:image/png;base64,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" /></p>
+<p>Mari kita asumsikan graf diatas adalah halaman website yang saling ditautkan dengan nama web 1, 2, 3, dan 4. PageRank adalah probabilitas, dan probabilitas awal harus sama dengan satu. jadi karena terdapat 4 vertex (simpul) pada graf, jadi sebagai contoh, mari bagi probabilitas awalnya menjadi 0,25 untuk setiap simpul (pembagian tidak harus sama rata, namun harus sama dengan 1). Kemudian, Misalkan pada simpul atau website 1 memiliki busur atau link yang ditautkan pada busur 2, 3, dan 4. Yang artinya simpul 1 memiliki 3 busur atau link yang jika ditotal harus menghasilkan nilai 1, jadi dapat dituliskan sebagai berikut :</p>
+<p><span class="math notranslate nohighlight">\(L(A) = [ { 0, \frac{1}{3} , \frac{1}{3}, \frac{1}{3}} ]\)</span></p>
+<p><span class="math notranslate nohighlight">\(L(B) = [ { \frac{1}{2}, 0 , 0, \frac{1}{2}} ]\)</span></p>
+<p><span class="math notranslate nohighlight">\(L(C) = [  0, 0 , 0, 1 ]\)</span></p>
+<p><span class="math notranslate nohighlight">\(L(D) = [ {0, \frac{1}{2} , \frac{1}{2},0}]\)</span></p>
+<p>sehingga akan menghasilkan sebuah matriks dibawah ini :</p>
+<p><span class="math notranslate nohighlight">\(A = \begin{bmatrix}
+0 &amp; \frac{1}{3} &amp; \frac{1}{3} &amp; \frac{1}{3} \\
+\frac{1}{2} &amp; 0 &amp; 0 &amp; \frac{1}{2} \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; \frac{1}{2} &amp; \frac{1}{2} &amp; 0 \\
+\end{bmatrix}\)</span></p>
+<p>Untuk mengetahui Page Rank awal dari setiap Node adalah dengan mencari Nilai Link yang mengarah ke Node tersebut, Misal Node A Page Ranknya adalah
+<span class="math notranslate nohighlight">\([0, \frac{1}{2} , 0, 0 ]\)</span>
+diperoleh hanya dari B yang melinkan dirinya ke A, Karena B hanya melinkan dirinya ke 2 Node (A dan D), maka A mendapat nilai dari B sebesar <span class="math notranslate nohighlight">\(1/2\)</span>
+. Begitu juga seterusnya, hingga membentuk membentuk sebuah matrix baru, yaitu kumpulan dari nilai Page Rank awal Node: (dalam desimal). Matrix ini dapat diperoleh juga dengan menuliskan vektor link Node secara kolom.</p>
+<p><span class="math notranslate nohighlight">\(\begin{align*}
+PR=
+\begin{bmatrix}
+0&amp;\frac{1}{2}&amp;0&amp;0\\
+\frac{1}{3}&amp;0&amp;0&amp;\frac{1}{2}\\
+\frac{1}{3}&amp;0&amp;0&amp;\frac{1}{2}\\
+\frac{1}{3}&amp;\frac{1}{2}&amp;1&amp;0
+\end{bmatrix}
+\end{align*}\)</span></p>
+<p>kemudian, untuk probabilitas kasarnya, saya berikan sebagai berikut :</p>
+<p><span class="math notranslate nohighlight">\(\begin{align*}
+v=
+\begin{bmatrix}
+0.15\\
+0.30\\
+0.30\\
+0.25
+\end{bmatrix}
+\end{align*}\)</span></p>
+<p>Untuk mengetahui urutan page yang memiliki pengaruh penting atau yang banyak di rujuk oleh page” lainnya di gunakanlah algoritma PageRank dengan mengalikan matrik L dengan v atau dengan rumus <span class="math notranslate nohighlight">\(v1 = L*v\)</span>
+. Maka akan membentuk sebuah vektor baru yaitu <span class="math notranslate nohighlight">\(v1 = Av\)</span>
+. Perkalian ini dilakukan terus menerus (iteratif) contoh lagi <span class="math notranslate nohighlight">\(v2 = L*v1\)</span>
+, <span class="math notranslate nohighlight">\(v3 = L*v2\)</span>
+hingga hasil perkalian tetap. Jika tidak memnungkinkan mendapatkan hasil tetap maka kita gunakan toleransi error untuk hasil yang mendekati. Batas toleransi error bisa kita tentukan sendiri, misal 0,01 (semakin kecil semakin hasilnya mendekati). Hasil error tersebut dapat dicari dengan hasil V nantinya di kuadratkan dan di jumlah kemudian di akar harus memiliki nilai &lt;0.01 Atau <span class="math notranslate nohighlight">\(error = \sqrt{V1^2+V2^2+VN}\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="c1"># matriks A yang di dapatkan dari hubungan ke empat Page</span>
+              <span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+
+<span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">0.15</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.30</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.30</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.25</span><span class="p">]])</span> <span class="c1"># matrik V yang di buat dengan nilai probalitas bernilai 1</span>
+
+<span class="c1"># batas toleransi error bahwasanya hasil V nantinya di kuadratkan dan di jumlah kemudian di akar harus memiliki nilai &lt;0.01</span>
+<span class="n">error</span> <span class="o">=</span> <span class="mf">0.01</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># menghitung banyaknya iterasi</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">A</span> <span class="o">@</span> <span class="n">V</span> <span class="c1"># a merupakan tempat menyimpan hasil matrik A@V</span>
+    <span class="n">e</span><span class="o">=</span><span class="n">a</span><span class="o">-</span><span class="n">V</span> <span class="c1"># e merupakan selisih dari hasil perkalian sebelumnya</span>
+    <span class="n">f</span><span class="o">=</span><span class="mi">0</span> <span class="c1"># f untuk menyimpan selisih yang sudah di kuadratkan dari matrik e</span>
+    <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">e</span><span class="p">:</span>
+      <span class="n">f</span><span class="o">+=</span><span class="p">(</span><span class="n">d</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">f</span><span class="o">**</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">error</span><span class="p">:</span> <span class="c1"># kondisi dimanaa f harus &lt;= 0.01</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Converged at iteration:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Result:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+        <span class="k">break</span>
+    <span class="n">V</span> <span class="o">=</span> <span class="n">a</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ini adalah perulangan ke&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+    <span class="n">b</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">V</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ini adalah perulangan ke 1
+[[0.15 ]
+ [0.175]
+ [0.175]
+ [0.5  ]]
+ini adalah perulangan ke 2
+[[0.0875]
+ [0.3   ]
+ [0.3   ]
+ [0.3125]]
+ini adalah perulangan ke 3
+[[0.15      ]
+ [0.18541667]
+ [0.18541667]
+ [0.47916667]]
+ini adalah perulangan ke 4
+[[0.09270833]
+ [0.28958333]
+ [0.28958333]
+ [0.328125  ]]
+ini adalah perulangan ke 5
+[[0.14479167]
+ [0.19496528]
+ [0.19496528]
+ [0.46527778]]
+ini adalah perulangan ke 6
+[[0.09748264]
+ [0.28090278]
+ [0.28090278]
+ [0.34071181]]
+ini adalah perulangan ke 7
+[[0.14045139]
+ [0.20285012]
+ [0.20285012]
+ [0.45384838]]
+ini adalah perulangan ke 8
+[[0.10142506]
+ [0.27374132]
+ [0.27374132]
+ [0.3510923 ]]
+Converged at iteration: 9
+Result: [[0.13687066]
+ [0.2093545 ]
+ [0.2093545 ]
+ [0.44442033]]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="tugas5.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Transformasi Linier</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian">Pengertian</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-dasar">Konsep Dasar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algoritma">Algoritma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi">Implementasi</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
